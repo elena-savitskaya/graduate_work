@@ -1,0 +1,16 @@
+@mixin alignCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin spaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin textGradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

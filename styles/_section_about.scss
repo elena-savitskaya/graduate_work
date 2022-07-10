@@ -1,0 +1,101 @@
+@use "./variables" as *;
+@use "./base";
+@use "./mixins";
+
+.section_about {
+    padding: 60px 0;
+    background: $color-white;
+
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.section_about_info {
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    &_text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $color-black;
+    }
+}
+
+.section_about_indicators {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    border-left: 4px solid $background-separator;
+
+    &_indicator {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .indicators_title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            background: $background-red-text;
+            @include mixins.textGradient;
+        }
+
+        .indicators_img {
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+
+    .indicators_text {
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-main;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section_about_info {
+        max-width: 486px;
+    }
+
+    .section_about_indicators {
+        max-width: 354px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section_about_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section_about_info {
+        max-width: 100%;
+    }
+
+    .section_about_indicators {
+        max-width: 100%;
+
+        .indicators_title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+
+        .indicators_text:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+

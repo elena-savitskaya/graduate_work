@@ -1,0 +1,65 @@
+@use "./variables" as *;
+@use "./base";
+
+.section_team_full_card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &_img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_content {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_inscription {
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 117px;
+            letter-spacing: 63px;
+            color: $color-white;
+            text-transform: uppercase;
+            opacity: 80%;
+            text-shadow: rgba(40, 40, 86, 0.8) 0px 15px 30px;
+
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section_team_full_card_content_inscription {
+            font-size: 86px;
+            line-height: 104px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section_team_full_card_content_inscription {
+            font-size: 46px;
+            line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section_team_full_card_content_inscription {
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 13px;
+    }
+}
+

@@ -1,0 +1,107 @@
+@use "./variables" as *;
+@use "./base";
+
+
+.section_trust_us {
+    padding: 60px 0 0 0;
+
+    &_title {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.trust_us_companies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    &_names {
+        position: relative;
+        display: block;
+        height: 120px;
+
+        img {
+            max-width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.color_1 {
+    background-color: #1C4280;          
+}
+
+.color_2 {
+    background-color: #143646;
+}
+
+.color_3 {
+    background-color: #F48B30;
+}
+
+.color_4 {
+    background-color: #9E4DC3;
+}
+
+.color_5 {
+    background-color: #FD9339;
+}
+
+.color_6 {
+    background-color: #E2E2E4;
+}
+
+.color_7 {
+    background-color: #C71C36;
+}
+
+.color_8 {
+    background-color: #DCF3F9;
+}
+
+.color_9 {
+    background-color: #EAEAEA;
+}
+
+.color_10 {
+    background-color: #282240;
+}
+
+.color_11 {
+    background-color: #1D4568;
+}
+
+.color_12 {
+    background-color: #000000;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .trust_us_companies {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+    .trust_us_companies {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .color_7, 
+    .color_8,
+    .color_9,
+    .color_10,
+    .color_11,
+    .color_12 {
+        display: none;
+    }
+}

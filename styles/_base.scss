@@ -1,0 +1,168 @@
+@use "./variables" as *;
+@use "./mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container_full {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: $font-family;
+}
+
+input, button, textarea {
+    font-family: inherit;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.main_title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: $background-red-text;
+    @include mixins.textGradient;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: $color-main;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $color-main;
+}
+
+.subtitle_caps {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-main;
+}
+
+.subtitle_h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-main;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+ul, ol, li {
+    padding-left: 10px; 
+    margin: 10px;
+}
+
+.unordered_list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-accent;
+    list-style-type: disc;
+}
+
+.ordered_list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-accent;
+    list-style-type: decimal;
+}
+
+li span {
+    color: #000000;
+}
+
+.link {
+    color: $color-active;
+
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+.main_button {
+    padding: 18px 30px;
+    background-color: $color-active;
+    box-shadow: 0px 0px 20px 0px rgba($color:  #24A3FF80, $alpha: 0.5);
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-active-hover;
+    }
+
+    &:active {
+        background-color: $color-active-active;
+    }
+
+    .button {
+        color: $color-white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.slick-dots li.slick-active button:before {
+    opacity: 100%;
+}
+
+.slick-dots li button:before {
+    margin-top: 30px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 0px;
+    background-color: $color-active;
+    opacity: 20%;
+}
+
+.slick-dots li button:hover {
+    opacity: 60%;
+} 
+
+.none {
+    display: none;
+}
+
+

@@ -1,0 +1,31 @@
+@use "./variables" as *;
+@use "./base";
+
+.section_achievements {
+    background-color: $background-grey;
+    padding: 30px 0;
+
+
+    &_subtitle {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .section_achievements_links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 25px 0;
+            background-color: $color-white;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+

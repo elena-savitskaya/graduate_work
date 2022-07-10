@@ -1,0 +1,115 @@
+@use "./variables" as *;
+@use "./base";
+
+
+.section_person {
+    padding: 60px 0 0 0;
+    background-color: $color-white;
+
+    .section_person_wrapper {
+        display: flex;
+        gap: 30px;
+        align-items: stretch;
+        justify-content: flex-start;
+        border-radius: 12px;
+        background-color: $background-grey;
+    }
+
+    &_foto {
+        display: flex;
+        width: 400px;
+        height: auto;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+    
+}
+
+.section_person_data {
+    padding: 30px 0;
+    max-width: 100%;
+
+    .link_to {
+        margin-bottom: 5px;
+    }
+
+    &_title {
+        margin-bottom: 30px;
+        max-width: 860px;
+        word-wrap: break-word;
+    }
+
+    &_name {
+        margin-bottom: 7px;
+        color: $background-text;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+    &_position {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $background-text;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .section_person_data_title {
+        max-width: 444px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section_person_wrapper {
+        padding-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_person_foto {
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    .section_person_data {
+        padding: 0 30px;
+
+        &_title {
+            max-width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    
+    .section_person_data_title {
+        font-size: 30px;
+        line-height: 37px;
+    }   
+}
+
+@media screen and (max-width: 315px) {
+    
+    .section_person_data_title {
+        max-width: 250px;
+    }   
+}
+

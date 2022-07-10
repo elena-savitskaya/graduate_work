@@ -1,0 +1,62 @@
+@use "./variables" as *;
+@use "./base";
+
+.section_quality {
+    padding: 60px 0;
+
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+
+        .section_quality_paragraphs {
+            max-width: 658px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &_paragraph {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                color: $color-black;
+            }
+        }
+
+        .main_title {
+            max-width: 362px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .section_quality_wrapper .section_quality_paragraphs {
+        max-width: 482px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .section_quality_wrapper {
+        flex-direction: column;
+        gap: 30px;
+
+        .section_quality_paragraphs {
+            max-width: 100%;
+        }
+
+        .main_title {
+            max-width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .main_title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
