@@ -27,15 +27,15 @@ A modern, responsive, and interactive web project built using **HTML**, **CSS (S
 
 ## 🔧 Project Structure
 
-/graduate_work
-├── index.html       # Main page. There are 6 pages in total.
-├── styles/          # SCSS files
-├── js/              # JS files
-├── images/          # Media files
-└── README.md        # This file
+### /graduate_work
+### ├── index.html       # Main page. There are 6 pages in total.
+### ├── styles/          # SCSS files
+### ├── js/              # JS files
+### ├── images/          # Media files
+### └── README.md        # This file
 
 ## 📌 Features
-✔️ Responsive Design: Works seamlessly across all devices.
-✔️ Interactive JS Elements: Dynamic user experience with native JS.
-✔️ Cross-Browser Compatibility: Fully functional on modern browsers.
+### ✔️ Responsive Design: Works seamlessly across all devices.
+### ✔️ Interactive JS Elements: Dynamic user experience with native JS.
+### ✔️ Cross-Browser Compatibility: Fully functional on modern browsers.
 
