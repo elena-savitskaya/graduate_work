@@ -25,7 +25,7 @@ A modern, responsive, and interactive web project built using **HTML**, **CSS (S
    
 3. Open index.html in your browser to view the project.
 
-🔧 Project Structure
+## 🔧 Project Structure
 
 /graduate_work
 ├── index.html       # Main page. There are 6 pages in total.
@@ -34,7 +34,7 @@ A modern, responsive, and interactive web project built using **HTML**, **CSS (S
 ├── images/          # Media files
 └── README.md        # This file
 
-📌 Features
+## 📌 Features
 ✔️ Responsive Design: Works seamlessly across all devices.
 ✔️ Interactive JS Elements: Dynamic user experience with native JS.
 ✔️ Cross-Browser Compatibility: Fully functional on modern browsers.
