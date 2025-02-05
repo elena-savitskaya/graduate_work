@@ -14,16 +14,19 @@ A modern, responsive, and interactive web project built using **HTML**, **CSS (S
 
 ## 📦 Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
 
    ```bash
    git clone https://github.com/elena-savitskaya/graduate_work.git
+   ```
    
-2. Navigate to the project directory:
+### 2. Navigate to the project directory:
 
+ ```bash
    cd graduate_work
+ ```
    
-3. Open index.html in your browser to view the project.
+### 3. Open index.html in your browser to view the project.
 
 ## 🔧 Project Structure
 
